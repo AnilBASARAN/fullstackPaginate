@@ -31,7 +31,7 @@ router.get("/type", async (req, res) => {
     res.json({ rows });
   } catch (err) {
     console.error("Error executing query", err.stack);
-    res.status(500).json({ error: 'Internal Server Error' });
+    res.json({ rows});
   }
 });
 
